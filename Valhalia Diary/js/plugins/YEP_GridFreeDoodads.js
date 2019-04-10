@@ -8,11 +8,11 @@ Imported.YEP_GridFreeDoodads = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.GFD = Yanfly.GFD || {};
-Yanfly.GFD.version = 1.08;
+Yanfly.GFD.version = 1.10;
 
 //=============================================================================
  /*:
- * @plugindesc v1.08 Place Grid-Free Doodads into your game using an
+ * @plugindesc v1.10 Place Grid-Free Doodads into your game using an
  * in-game editor. Static and animated doodads can be used!
  * @author Yanfly Engine Plugins
  *
@@ -316,6 +316,14 @@ Yanfly.GFD.version = 1.08;
  * Changelog
  * ============================================================================
  *
+ * Version 1.10:
+ * - Fixed loading issues for people using version 1.5.0+ and not using the
+ * YEP_X_CoreUpdatesOpt and desktop optimization setting.
+ *
+ * Version 1.09:
+ * - Fixed a bug for the Toggle Region Overlay that made certain dimensions not
+ * work properly.
+ *
  * Version 1.08:
  * - Updated for RPG Maker MV version 1.6.0 again. There was an issue with
  * newly added doodads not saving properly due to the changed file structure.
@@ -421,7 +429,33 @@ ImageManager.loadDoodadBitmap = function(folder, filename, hue, smooth) {
   }
 };
 
-if (Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= '1.3.0') {
+if (Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= '1.5.0') {
+
+// Use base ImageManager.isReady
+
+ImageCache.prototype.isReady = function(){
+    var items = this._items;
+    return !Object.keys(items).some(function(key){
+        return !items[key].bitmap.isRequestOnly() && !items[key].bitmap.isReady();
+    });
+};
+
+ImageCache.prototype.getErrorBitmap = function(){
+    var items = this._items;
+    var bitmap = null;
+    if(Object.keys(items).some(function(key){
+            if(items[key].bitmap.isError()){
+                bitmap = items[key].bitmap;
+                return true;
+            }
+            return false;
+        })) {
+        return bitmap;
+    }
+    return null;
+};
+
+} else if (Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= '1.3.0') {
 
 ImageManager.isReady = function() {
     for (var key in this.cache._inner) {
@@ -2835,7 +2869,7 @@ Window_GFD_RegionOverlay.prototype.initialize = function() {
   var width = $gameMap.width() * $gameMap.tileWidth();
   var height = $gameMap.height() * $gameMap.tileHeight();
   this._mapWidth = $gameMap.width();
-  this._mapHeight = $gameMap.width();
+  this._mapHeight = $gameMap.height();
   this._tileWidth = $gameMap.tileWidth();
   this._tileHeight = $gameMap.tileHeight();
   this._pX = 0;
