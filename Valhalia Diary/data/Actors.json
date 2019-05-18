@@ -1,5 +1,5 @@
 [
 null,
-{"id":1,"battlerName":"","characterIndex":0,"characterName":"","classId":3,"equips":[1,1,0,3,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"initstart","nickname":"","note":"","profile":""},
+{"id":1,"battlerName":"","characterIndex":0,"characterName":"","classId":3,"equips":[1,1,0,3,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"initstart","nickname":"","note":"","profile":"Dummy character for the start of the game.\nYou shouldn't be reading this!"},
 {"id":2,"battlerName":"kohaku","characterIndex":0,"characterName":"kohaku_walk","classId":3,"equips":[1,1,0,3,0],"faceIndex":0,"faceName":"kira","traits":[],"initialLevel":1,"maxLevel":99,"name":"Kohaku Suzuki","nickname":"","note":"","profile":"A seemingly average girl with a lot of wit."}
 ]
