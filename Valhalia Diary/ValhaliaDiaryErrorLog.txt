@@ -1,12 +1,12 @@
-[INFO 7/11/2019 01:29:07am] 
+[INFO 7/14/2019 03:40:17pm] 
  %c %c %c LTNCore.js 1.3.0 %c  
 
 
-[INFO 7/11/2019 01:29:07am] 
+[INFO 7/14/2019 03:40:17pm] 
  %c %c %c MV 1.6.1 %c  
 
 
-[INFO 7/11/2019 01:29:08am] 
+[INFO 7/14/2019 03:40:17pm] 
  %c %c %c PixiJS 4.5.4 - ✰ WebGL ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
 
 
