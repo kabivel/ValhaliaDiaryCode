@@ -1,0 +1,8 @@
+In this build:
+
+-New SFX!
+-Added a way to highlight the important 
+events that you'll walk into, such as diary shard locations
+-This very patch notes function!
+-Removed HP and MP bars from the status page since there
+are zero fights
