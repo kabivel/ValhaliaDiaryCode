@@ -1,12 +1,12 @@
-[INFO 9/27/2019 11:23:55pm] 
+[INFO 9/30/2019 01:35:53am] 
  %c %c %c LTNCore.js 1.3.0 %c  
 
 
-[INFO 9/27/2019 11:23:55pm] 
+[INFO 9/30/2019 01:35:53am] 
  %c %c %c MV 1.6.1 %c  
 
 
-[INFO 9/27/2019 11:23:55pm] ・Unused--------------
+[INFO 9/30/2019 01:35:53am] ・Unused--------------
 Olivia_MapDisplayNameCore.js
 ReadyToRumble.js
 YEP_IconBalloons.js
@@ -79,7 +79,7 @@ YEP_X_MessageSpeedOpt.js
 GALV_RollCredits.js
 MBS_MobileDirPad.js
 
-[INFO 9/27/2019 11:23:55pm] 
+[INFO 9/30/2019 01:35:53am] 
  %c %c %c PixiJS 4.5.4 - ✰ WebGL ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
 
 
