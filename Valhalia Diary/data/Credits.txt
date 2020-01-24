@@ -19,7 +19,6 @@ Taylor
 \c[2]Voice Actors & Actresses
 Doki (Voiced Kohaku)
 Raine (Voiced Aoi during the early stages)
-Ryan Pratt (Voiced Eizou)
 
 \c[2]Playtesters
 Drew
@@ -38,8 +37,9 @@ This has been an amazing ride.
 And i am glad to have
 everyone's support and love.
 I hope you have enjoyed playing 
-Valhalia Diary
+Valhalia Diary: First Pages
 As much as we had fun developing it.
+~Allison
 </block>
 
 <block:999,0,10,10,300,center,untitled260-2>

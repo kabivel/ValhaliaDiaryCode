@@ -1,26 +1,6 @@
 [
   null,
-  [
-    {
-      "folder": "Objects/Indoor/",
-      "bitmap": "Mirror",
-      "hue": 0,
-      "x": 316,
-      "y": 65,
-      "z": 3,
-      "iconIndex": 0,
-      "anchorX": 0.5,
-      "anchorY": 1,
-      "scaleX": 100,
-      "scaleY": 100,
-      "blend": 0,
-      "opacity": 255,
-      "xFrames": 1,
-      "yFrames": 1,
-      "frameUpdate": 20,
-      "smooth": false
-    }
-  ],
+  [],
   null,
   null,
   null,
@@ -278,27 +258,7 @@
   ],
   null,
   null,
-  [
-    {
-      "folder": "Objects/Outdoor/",
-      "bitmap": "Mailbox",
-      "hue": 0,
-      "x": 456,
-      "y": 134,
-      "z": 3,
-      "iconIndex": 0,
-      "anchorX": 0.5,
-      "anchorY": 1,
-      "scaleX": 100,
-      "scaleY": 100,
-      "blend": 0,
-      "opacity": 255,
-      "xFrames": 1,
-      "yFrames": 1,
-      "frameUpdate": 20,
-      "smooth": false
-    }
-  ],
+  [],
   [
     {
       "folder": "Objects/Indoor/",
@@ -622,25 +582,5 @@
   ],
   null,
   null,
-  [
-    {
-      "folder": "Objects/Indoor/",
-      "bitmap": "Mirror",
-      "hue": 0,
-      "x": 311,
-      "y": 78,
-      "z": 3,
-      "iconIndex": 0,
-      "anchorX": 0.5,
-      "anchorY": 1,
-      "scaleX": 100,
-      "scaleY": 100,
-      "blend": 0,
-      "opacity": 255,
-      "xFrames": 1,
-      "yFrames": 1,
-      "frameUpdate": 20,
-      "smooth": false
-    }
-  ]
+  []
 ]
