@@ -26,5 +26,6 @@ null,
 {"id":24,"expanded":true,"name":"MAP024","order":27,"parentId":23,"scrollX":659,"scrollY":356.5},
 {"id":25,"expanded":false,"name":"MAP025","order":18,"parentId":9,"scrollX":659,"scrollY":356.5},
 {"id":26,"expanded":true,"name":"Kohaku's Bedroom 5","order":19,"parentId":9,"scrollX":659,"scrollY":356.5},
-{"id":27,"expanded":true,"name":"Kohaku's Bedroom 3","order":14,"parentId":15,"scrollX":659,"scrollY":356.5}
+{"id":27,"expanded":true,"name":"Kohaku's Bedroom 3","order":14,"parentId":15,"scrollX":659,"scrollY":356.5},
+{"id":28,"expanded":true,"name":"St.Antonius High ~ Main Hall 2","order":28,"parentId":23,"scrollX":659,"scrollY":356.5}
 ]
