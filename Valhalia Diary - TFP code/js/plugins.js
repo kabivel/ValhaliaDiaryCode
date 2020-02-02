@@ -54,7 +54,6 @@ var $plugins =
 {"name":"TF_RandomNumberGenerator","status":true,"description":"v1.0.0 Get random number.\r\nCan also call the command wait with a variable.","parameters":{}},
 {"name":"YEP_LoadCustomFonts","status":true,"description":"v1.01 Load custom fonts from the /fonts/ folder. This will\nallow you to use custom fonts without installing them.","parameters":{"Font Filenames":"sagesans-Regular.ttf","Font Families":"sage sans"}},
 {"name":"PH_SpriteReflection","status":true,"description":"This plugin allows you to reflect any character in the water.","parameters":{"--Reflection--":"","Distance":"30","Scale Factor":"100","Opacity":"50","Blend Mode":"0","Small Water Tile":"1","--Window_Options--":"","Add to Window_Options":"1","Vocabulary Window_Options":"Reflections"}},
-{"name":"dread_blood","status":true,"description":"Bleed all over the place.","parameters":{"grid_size":"24","blood_image":"$!blood","blood_index":"0"}},
 {"name":"YEP_EventMiniLabel","status":true,"description":"v1.12 Creates miniature-sized labels over events to allow\nyou to insert whatever text you'd like in them.","parameters":{"Default Show":"true","Minimum Width":"136","Font Size":"20","X Buffer":"0","Y Buffer":"36","Battle Transition":"false"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"JAH_NewGameEvent","status":true,"description":"v1.0.0 Allows for a Common Event to be launched immediately upon selection of a New Game.","parameters":{"Launch Event ID":"32"}},
