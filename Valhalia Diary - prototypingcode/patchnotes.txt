@@ -1,0 +1,7 @@
+V1.3.1 - "Hearts On Glass"
+
+-New Save System!
+-More new SFX!
+-Bug fixes. Lots of them!
+-New SPL logo animation and sound
+-Various changes to some text in game!
