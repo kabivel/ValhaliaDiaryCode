@@ -1,6 +1,6 @@
 [
 null,
-{"id":1,"expanded":true,"name":"Kohaku's Bedroom","order":1,"parentId":0,"scrollX":659,"scrollY":358},
+{"id":1,"expanded":true,"name":"Kohaku's Bedroom","order":1,"parentId":0,"scrollX":659,"scrollY":355.5},
 {"id":2,"expanded":false,"name":"The Hallway","order":2,"parentId":1,"scrollX":651,"scrollY":362},
 {"id":3,"expanded":false,"name":"Bathroom","order":3,"parentId":1,"scrollX":659,"scrollY":358},
 {"id":4,"expanded":true,"name":"MAP999","order":15,"parentId":0,"scrollX":659,"scrollY":358},
