@@ -22,7 +22,27 @@
       "smooth": false
     }
   ],
-  null,
+  [
+    {
+      "folder": "Objects/Indoor/",
+      "bitmap": "Waste Basket",
+      "hue": 0,
+      "x": 65,
+      "y": 295,
+      "z": 3,
+      "iconIndex": 0,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "scaleX": 100,
+      "scaleY": 100,
+      "blend": 0,
+      "opacity": 255,
+      "xFrames": 1,
+      "yFrames": 1,
+      "frameUpdate": 20,
+      "smooth": false
+    }
+  ],
   null,
   [],
   null,
@@ -71,8 +91,48 @@
       "smooth": false
     }
   ],
-  null,
-  null,
+  [
+    {
+      "folder": "Plants/",
+      "bitmap": "House Plant B",
+      "hue": 0,
+      "x": 360,
+      "y": 443,
+      "z": 3,
+      "iconIndex": 0,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "scaleX": 100,
+      "scaleY": 100,
+      "blend": 0,
+      "opacity": 255,
+      "xFrames": 1,
+      "yFrames": 1,
+      "frameUpdate": 20,
+      "smooth": false
+    }
+  ],
+  [
+    {
+      "folder": "Plants/",
+      "bitmap": "House Plant B",
+      "hue": 0,
+      "x": 360,
+      "y": 443,
+      "z": 3,
+      "iconIndex": 0,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "scaleX": 100,
+      "scaleY": 100,
+      "blend": 0,
+      "opacity": 255,
+      "xFrames": 1,
+      "yFrames": 1,
+      "frameUpdate": 20,
+      "smooth": false
+    }
+  ],
   [
     {
       "folder": "Objects/Indoor/",
@@ -114,10 +174,70 @@
     }
   ],
   null,
+  [
+    {
+      "folder": "Plants/",
+      "bitmap": "House Plant B",
+      "hue": 0,
+      "x": 360,
+      "y": 443,
+      "z": 3,
+      "iconIndex": 0,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "scaleX": 100,
+      "scaleY": 100,
+      "blend": 0,
+      "opacity": 255,
+      "xFrames": 1,
+      "yFrames": 1,
+      "frameUpdate": 20,
+      "smooth": false
+    }
+  ],
+  [
+    {
+      "folder": "Plants/",
+      "bitmap": "House Plant B",
+      "hue": 0,
+      "x": 360,
+      "y": 443,
+      "z": 3,
+      "iconIndex": 0,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "scaleX": 100,
+      "scaleY": 100,
+      "blend": 0,
+      "opacity": 255,
+      "xFrames": 1,
+      "yFrames": 1,
+      "frameUpdate": 20,
+      "smooth": false
+    }
+  ],
   null,
-  null,
-  null,
-  null,
+  [
+    {
+      "folder": "Plants/",
+      "bitmap": "House Plant B",
+      "hue": 0,
+      "x": 360,
+      "y": 443,
+      "z": 3,
+      "iconIndex": 0,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "scaleX": 100,
+      "scaleY": 100,
+      "blend": 0,
+      "opacity": 255,
+      "xFrames": 1,
+      "yFrames": 1,
+      "frameUpdate": 20,
+      "smooth": false
+    }
+  ],
   null,
   null,
   null,
