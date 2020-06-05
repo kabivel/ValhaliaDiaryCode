@@ -1,0 +1,51 @@
+Text that appears outside of the block tags
+will not display in the credits scene
+
+<block:-1,-0.6,10,10,offbot,center,Title1>
+Staff Roll
+
+\c[2]Engine
+Degica
+RPG Maker MV
+
+\c[2]Lead Artists
+Taranzah
+Charlotte (Promo art)
+Ed (CG art)
+
+\c[2]Script Writer
+Taylor
+
+\c[2]Voice Actors & Actresses
+Zel (Voiced Kohaku)
+Kasey (Voiced Aoi)
+Ryan Pratt (Voiced Eizou)
+
+\c[2]Playtesters
+Samantha
+
+\c[2]Hands On Assistant
+Atlas
+
+\c[2]Special Thanks
+All of my supporters
+Everyone at Sakura Pixel Lab
+You, for playing!
+</block>
+
+<block:1,0,10,10,100,right>
+This has been an amazing ride.
+</block>
+
+<block:-1,0,10,10,100,left,Plain>
+And i am glad to have
+everyone's support and love.
+I hope you have enjoyed playing 
+Valhalia Diary: The First Pages
+As much as we had fun developing it.
+~Allison
+</block>
+
+<block:999,0,10,10,300,center,untitled260-2>
+THE END
+</block>

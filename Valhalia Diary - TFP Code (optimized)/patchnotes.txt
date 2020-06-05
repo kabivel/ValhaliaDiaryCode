@@ -1,0 +1,21 @@
+1.3.2 - "Starlit Cafe"
+
+Small bit of optimization done to the game. The game should now feel faster, at least a little (or more, depending on your system)
+
+The laptop puzzle is completely removed now as we are gearing up to replace it.
+
+Kohaku's now got a voice, as provided by Zel this time!
+Zel's work can be heard throughout chapter one, but only chapter one at this time.
+Me and the team gave Doki a solid farewell salute for the work she did early on.
+
+The game now asks you if you want to turn the sparkle system on or off upon starting a new game!
+This can be changed later in the options if you change your mind. Do note the sparkle system applies to key items only, and not diary shards.
+
+Iconset is slowly being updated in this release. It's not fully finished, but there is now a much better styling to the icons in the inventory!
+
+Social media buttons have been added to the title screen, which link back to my tumblr about the game, the patreon page, as well as the SPL twitter!
+
+Audio enhancements have been added, such as the game now stopping all audio when out of focus, and resuming when in focus.
+
+The game now takes up less storage space compared to before, which should make the download less painful.
+
