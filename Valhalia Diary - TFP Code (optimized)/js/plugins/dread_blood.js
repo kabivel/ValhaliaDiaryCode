@@ -1,6 +1,6 @@
 /*:
  * @plugindesc Bleed all over the place.
- * @author Dreadwing93
+ * @author Dreadwing93 (Original) Nualie / Atlas (patch)
  *
  * @param grid_size
  * @text Grid Size
@@ -24,6 +24,13 @@
  * @max 7
  * @type Number
  *
+ * @param max_map
+ * @text Number of Maps
+ * @desc How many maps you have.
+ * @default 1
+ * @min 1
+ * @type Number
+ *
  * @help
  *
  * This script can be used to make characters bleed.
@@ -45,7 +52,38 @@
  *
  *   using plugin command:
  *   bleed 0.1 1
+ * 
+ * Clear the blood from the current map: 
  *
+ *   using script:
+ *	 
+ *   resetBloodmap($gameMap._mapId);
+ *   $gameMap.refresh()
+ *
+ *   using plugin command:
+ *   bloodclear
+ *
+ * Clear the blood from a specific map: 
+ * (Note: You can find what map Id is whose in MapInfos.json)
+ *   using script:
+ *	 
+ *   resetBloodmap(<mapId you want>);
+ *   $gameMap.refresh()
+ *
+ *   using plugin command:
+ *   bloodclear mapId (ex: bloodclear 1)
+ * 
+ * Clear the blood from all maps: 
+ * (Note: You must put how many maps you have in the new plugin parameter and keep that updated, I'll try and find an automatic way.)
+ *   using script:
+ *	 
+ *		for (var i = <total number of maps>; i > 0; i--) {
+ *			resetBloodmap(i);
+ *		}
+ *		$gameMap.refresh()
+ *
+ *   using plugin command:
+ *   bloodclearall
  * 
  */
 
@@ -56,6 +94,7 @@
 
 	var BLOOD_IMAGE = String(parameters['blood_image']);
 	var BLOOD_INDEX = Number(parameters['blood_index']);
+	var MAX_MAP = Number(parameters['max_map']);
 	ImageManager.reserveCharacter(BLOOD_IMAGE);
 
 	var override_createCharacters = Spriteset_Map.prototype.createCharacters;
@@ -106,10 +145,35 @@
 		return ($gameMap.bloodmap[$gameMap._mapId][row]&(1<<bit))>>bit;
 	}
 
+	gameMap.prototype.resetBloodmap=function(_mapId){ //new function, should reset input map's blood
+		for (var row=0;row<$gameMap.bloodmap[_mapId].length;++row){
+			if($gameMap.bloodmap[_mapId][row]==null){
+				$gameMap.bloodmap[_mapId][row]=0;
+				continue;
+			}
+			if(!$gameMap.bloodmap[_mapId][row]) continue;
+		for (var bit=0;bit<32;++bit){
+			if(($gameMap.bloodmap[_mapId][row]&(1<<bit))>>bit){
+				var i = row*32+bit;
+				var x = i%bloodmapWidth;
+				var y = Math.floor(i/bloodmapWidth);
+				resetBloodBit(x,y);
+			}
+		}}
+	};
+
+	function resetBloodBit(x,y){ //new function, sets given bit back to 0
+		var bit = y*bloodmapWidth+x;
+		var row = Math.floor(bit/32);
+		bit %= 32;
+		$gameMap.bloodmap[$gameMap._mapId][row]|=0<<bit;
+	} 
+
 	function readBloodmap(){
 		for (var row=0;row<$gameMap.bloodmap[$gameMap._mapId].length;++row){
 			if($gameMap.bloodmap[$gameMap._mapId][row]==null){
 				$gameMap.bloodmap[$gameMap._mapId][row]=0;
+				bloodContainer.removeChild(row);
 				continue;
 			}
 			if(!$gameMap.bloodmap[$gameMap._mapId][row]) continue;
@@ -119,6 +183,7 @@
 				var x = i%bloodmapWidth;
 				var y = Math.floor(i/bloodmapWidth);
 				drawBloodspot(x,y);
+
 			}
 		}}
 	}
@@ -186,17 +251,41 @@
 		setBloodBit(x,y);
 	};
 
-	var override_pluginCommand = Game_Interpreter.prototype.pluginCommand;
-	Game_Interpreter.prototype.pluginCommand = function(command, args) {
-		override_pluginCommand.apply(this,arguments);
-		if (command.toLowerCase()!=='bleed'){ return; }
-		if(Number(args[1])){
-			$gameMap.event(args[1]).bleed(Number(args[0]));
-		}else{
-			$gamePlayer.bleed(Number(args[0]));
-		}
-		
-	};
+var override_pluginCommand = Game_Interpreter.prototype.pluginCommand;
+    Game_Interpreter.prototype.pluginCommand = function(command, args) {
+        override_pluginCommand.apply(this,arguments);
+        if (command.toLowerCase()!=='bleed' || command.toLowerCase()!=='bloodclear' || command.toLowerCase()!=='bloodclearall'){ return; }
+        if(command.toLowerCase()==='bleed'){
+            if(Number(args[1])){
+           		$gameMap.event(args[1]).bleed(Number(args[0]));
+            }else{
+                $gamePlayer.bleed(Number(args[0]));
+            }    
+        }else if(command.toLowerCase()==='bloodclear')
+        {
+            if(Number(args[0])){
+                $gameMap.resetBloodmap(Number(args[0]));
+
+            }else{
+
+                $gameMap.resetBloodmap($gameMap._mapId);
+            }
+            $gameMap.refresh()
+        }else
+        {
+            for (var i = MAX_MAP; i > 0; i--) {
+                $gameMap.resetBloodmap(i);
+            }
+            $gameMap.refresh()
+
+        }    
+
+
+        
+    };
 
 
 })();
+
+
+
